@@ -21,10 +21,8 @@ buttonEl.addEventListener('click', e => {
 });
 
 function onFormInput(e) {
-  e.preventDefault();
-
-  const email = formEl.elements.email.value;
-  const message = formEl.elements.message.value;
+  const email = formEl.elements.email.value.trim();
+  const message = formEl.elements.message.value.trim();
 
   const dataObj = {
     email,
@@ -43,7 +41,7 @@ function loadFromLS(key) {
   const parsedValue = localStorage.getItem(key);
   try {
     return JSON.parse(parsedValue);
-  } catch {
+  } catch (error) {
     return parsedValue;
   }
 }
