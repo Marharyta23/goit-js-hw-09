@@ -1,25 +1,87 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+ul {
+  list-style: none;
+  padding: 0;
+}
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+body {
+  max-width: 1440px;
+}
+
+.gallery-image-full {
+  width: 1112px;
+  height: 640px;
+}
+.feedback-form {
+  margin: 36px;
+}
+.feedback-form,
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #2e2f42;
+  font-family: Montserrat;
   font-size: 16px;
-  line-height: 24px;
   font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+.feedback-form input {
+  width: 360px;
+  height: 40px;
+  padding-left: 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+textarea {
+  width: 360px;
+  resize: none;
+  padding: 16px;
+  height: 80px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+button {
+  width: 95px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
+}
+
+button:hover,
+button:active,
+button:focus {
+  background-color: #6c8cff;
+}
+a {
+  color: #4e75ff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  margin: 24px;
 }
