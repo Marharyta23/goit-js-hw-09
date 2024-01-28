@@ -1,14 +1,13 @@
 const STORAGE_KEY = 'feedback-form-state';
 
 const formEl = document.querySelector('.feedback-form');
-const buttonEl = document.querySelector('button');
 
 formEl.addEventListener('input', onFormInput);
 
-buttonEl.addEventListener('click', e => {
+formEl.addEventListener('submit', e => {
   e.preventDefault();
-  const email = formEl.elements.email.value.trim();
-  const message = formEl.elements.message.value.trim();
+  const email = formEl.elements.email.value;
+  const message = formEl.elements.message.value;
   if (email !== '' && message !== '') {
     const dataObj = {
       email,
